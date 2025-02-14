@@ -3,7 +3,7 @@ import { CiLocationOn } from "react-icons/ci";
 const Filterjobs = () => {
   return (
     <div className='h-min-[100vh] min-w-[28%] mb-4 bg-[#F3F3F3]' >
-      <div className=' w-[343px] h-[920px] bg-[#FFFFFF] border-[#b5b3b3] border-[1px] p-1 rounded-3xl ml-53 drop-shadow-xl flex flex-col'>
+      <div className=' w-[343px] h-[920px] bg-[#FFFFFF] border-[#b5b3b3] border-[1px] p-1 rounded-3xl ml-55 drop-shadow-xl flex flex-col'>
         <h1 className='text-[32px] text-center'>Filter</h1>
         <label className='mx-4 text-[20px]'>Date Posted</label>
         <select className='w-[90%] mx-4 p-2 rounded-lg border-[#b5b3b3] border-[1px] mt-2'>
