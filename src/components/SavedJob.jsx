@@ -19,7 +19,7 @@ const SavedJob = ({ job, setJob, handleBookMark }) => {
                 <p>{item.company}</p>
               </div>
               <div>
-                <span className='p-1 bg-gray-400'>{item.type}</span>
+                <span className='p-1 bg-gray-400 mr-1'>{item.type}</span>
                 <span className='p-1 bg-gray-400'>{item.salary}</span>
               </div>
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { CiBookmark } from "react-icons/ci";
 import { FaBookmark } from "react-icons/fa";
 import { CiShare2 } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const JobCard = ({ id, title, isBookMarked, description, job, handleBookMark }) => {
   console.log('Rendering JobCard for job id:', id, 'isBookMarked:', isBookMarked);
@@ -12,9 +13,11 @@ const JobCard = ({ id, title, isBookMarked, description, job, handleBookMark }) 
       </div>
       <div className='flex flex-col w-[100%]'>
         <div className='flex justify-between'>
-          <h1 className='text-[2rem]'>{title}</h1>
+          <Link to={`/Describtion/${id}`}>
+            <h1 className='text-[2rem]'>{title}</h1>
+          </Link>
           <div className='flex'>
-            <div className="mr-3 hover:cursor-pointer" onClick={() => handleBookMark(id) }>
+            <div className="mr-3 hover:cursor-pointer" onClick={() => handleBookMark(id)}>
               {isBookMarked ? <FaBookmark size={32} /> : <CiBookmark size={37} />}
             </div>
             <div className='mr-2'>

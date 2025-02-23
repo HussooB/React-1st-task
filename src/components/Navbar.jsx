@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,17 +11,18 @@ const Navbar = () => {
         <p>Job Search</p>
         <p>My Applications</p>
         <p>Companies</p>
-        <p>Conatct Us</p>
+        <p>Contact Us</p>
       </div>
       <div>
-        <button className='mr-5 py-[6px] px-[57px] border-0 text-fuchsia-50 bg-[#0034D1] rounded-sm'>Log in</button>
-        <button className=' py-[6px] px-[57px] text-black border-[#0034D1] border-[1px] rounded-sm' >Sign in</button>
-      </div>
-      
         
-      
+          <button className='mr-5 py-[6px] px-[57px] border-0 text-fuchsia-50 bg-[#0034D1] rounded-sm hover:bg-amber-400'>Log in</button>
+        
+        <Link to='/MultiStepForm'>
+          <button className='py-[6px] px-[57px] text-black border-[#0034D1] border-[1px] rounded-sm hover:bg-amber-400'>Sign in</button>
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
