@@ -11,7 +11,7 @@ const Describtion = () => {
   useEffect(() => {
     const fetchJob = async () => {
       try {
-        const response = await fetch(`https://joblisting-rd8f.onrender.com/api/jobs/${id}`);
+        const response = await fetch(`https://joblisting-3hjv.onrender.com/api/jobs/${id}`);
         const data = await response.json();
         setJob(data);
       } catch (error) {

@@ -19,7 +19,7 @@ const DisplayWrapperwithSearch = () => {
   useEffect(()=>{
     const fetchJobs = async()=>{
       try{
-        const response = await fetch(`https://joblisting-rd8f.onrender.com/api/jobs?company=&search=&page=${page}&limit=5`);
+        const response = await fetch(`https://joblisting-3hjv.onrender.com/api/jobs?company=&search=&page=${page}&limit=5`);
         const data = await response.json();
         setJob(data.jobs);
       } catch (error){

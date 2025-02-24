@@ -11,7 +11,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
       <Route path="Describtion/:id" element={<Describtion />} />
-      <Route path="MultiStepForm" element={<MultiStepForm />} /> {/* Remove the leading slash */}
+      <Route path="MultiStepForm" element={<MultiStepForm />} /> 
     </Route>
   )
 );
